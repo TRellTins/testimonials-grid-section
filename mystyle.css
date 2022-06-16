@@ -7,23 +7,53 @@
     color: hsl(228, 45%, 44%); 
 }
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
-    /* font-family: 'Barlow Semi Condensed', sans-serif; */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;    
+}
 h5 {
     margin: 20px auto 20px;
+    line-height: 20px;
 }
 .text {
     margin: 20px auto 20px;
+    line-height: 20px;
 }
 
-/* span fonts and styling */
+
+/* styling for name and verified grad */
+.name-status {
+    color: hsl(0, 0%, 100%);
+}
+.white-background .name-status {
+    color: hsl(0, 0%, 81%);
+}
+.name-status span {
+    opacity: 50%;
+}
+
+
+/* styling for the header */
+h5 {
+    color: hsl(0, 0%, 100%);
+}
+.white-background h5 {
+    color: hsl(0, 0%, 81%);
+}
+/* styling for the text class */
+.review-cont > p {
+    color: hsl(0, 0%, 100%, 50%);
+}
+.review-cont .white-background > p {
+    color: hsl(0, 0%, 81%, 50%);
+}
+
 
 /* Mobile Styles */
-
 body {
     background-color: hsl(210, 46%, 95%);
     padding: 60px 25px; 
@@ -35,15 +65,32 @@ section {
 }
 .review-cont {
     padding: 20px;
-    background-color: blueviolet; /* delete this */
 }
 .profile-cont {
     display: flex;
     line-height: 20px;
 }
 .avatar {
-    border-radius: 50%;
+    border-radius: 100%;
     width: 30px;
+    height: 30px;
     margin-right: 20px;
 }
-
+.review-cont:nth-of-type(1){
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+}
+.review-cont:nth-of-type(2){
+    background-color: hsl(217, 19%, 35%);
+}
+.review-cont:nth-of-type(3) {
+    background-color: hsl(0, 0%, 100%);
+}
+.review-cont:nth-of-type(4){
+    background-color: hsl(219, 29%, 14%);
+}
+.review-cont:;:nth-child(5) {
+    background-color: hsl(0, 0%, 100%);
+}
