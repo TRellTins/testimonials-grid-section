@@ -13,11 +13,17 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Barlow Semi Condensed', sans-serif;    
+    font-family: 'Barlow Semi Condensed', sans-serif;  
 }
 h5 {
     margin: 20px auto 20px;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+p {
+    font-size: 13px;  
+    font-weight: 600;
 }
 .text {
     margin: 20px auto 20px;
@@ -28,9 +34,10 @@ h5 {
 /* styling for name and verified grad */
 .name-status {
     color: hsl(0, 0%, 100%);
+    font-weight: 500;
 }
 .white-background .name-status {
-    color: hsl(0, 0%, 81%);
+    color: hsl(217, 19%, 35%);
 }
 .name-status span {
     opacity: 50%;
@@ -42,14 +49,14 @@ h5 {
     color: hsl(0, 0%, 100%);
 }
 .white-background h5 {
-    color: hsl(0, 0%, 81%);
+    color: hsl(217, 19%, 35%);
 }
 /* styling for the text class */
 .review-cont > p {
-    color: hsl(0, 0%, 100%, 50%);
+    color: hsl(0, 0%, 100%, 70%);
 }
-.review-cont .white-background > p {
-    color: hsl(0, 0%, 81%, 50%);
+.white-background > p {
+    color: hsl(217, 19%, 35%, 70%);
 }
 
 
@@ -64,11 +71,11 @@ section {
     border-radius: 10px;
 }
 .review-cont {
-    padding: 20px;
+    padding: 20px 10px 20px 20px;
 }
 .profile-cont {
     display: flex;
-    line-height: 20px;
+    line-height: 15px;
 }
 .avatar {
     border-radius: 100%;
@@ -81,6 +88,7 @@ section {
     background-image: url(images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-position-x: 90%;
+    padding-right: 15px;
 }
 .review-cont:nth-of-type(2){
     background-color: hsl(217, 19%, 35%);
@@ -91,6 +99,6 @@ section {
 .review-cont:nth-of-type(4){
     background-color: hsl(219, 29%, 14%);
 }
-.review-cont:;:nth-child(5) {
+.review-cont:nth-child(5) {
     background-color: hsl(0, 0%, 100%);
 }
