@@ -102,3 +102,42 @@ section {
 .review-cont:nth-child(5) {
     background-color: hsl(0, 0%, 100%);
 }
+
+/* desktop setttings */
+@media only screen and (min-width: 600px) {
+   body {
+    padding: 120px 70px;
+    /* to center the content */
+   }
+
+    main {
+    display: grid;
+    grid-row: 2;
+    row-gap: 10px;
+    grid-column: 3;
+    column-gap: 10px;
+   }
+
+   /* styling to make the grid layout */
+   section:nth-of-type(1) {
+    grid-column: 1/3;
+    grid-row: 1/2;
+   }
+   section:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+   }
+   section:nth-of-type(3) {
+    grid-column: 1/3;
+    grid-row: 2/2;
+   }
+   section:nth-of-type(4) {
+    grid-column: 2/3;
+    grid-row: 2/2;
+   }
+   section:nth-of-type(5) {
+    grid-column: 3/3;
+    grid-row: 1/2;
+    
+   }
+}
